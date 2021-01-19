@@ -1,9 +1,11 @@
 <script>
   const url_1 = 'https://rudy-tile.basecamp.tw/11/1713/881.jpg';
   const url_2 = 'https://wmts.nlsc.gov.tw/wmts/PHOTO2/default/EPSG:3857/11/881/1713.jpg';
+  const url_3 = 'https://rudy-tile.basecamp.tw/11/1713/882.jpg';
 
   fetch(url_1).then(() => console.log('GET URL 1'));
   fetch(url_2).then(() => console.log('GET URL 2'));
+  fetch(url_3,{headers:{'Authorization': 'Yao'}}).then(() => console.log('GET URL 3'));
 </script>
 
 <!-- 
